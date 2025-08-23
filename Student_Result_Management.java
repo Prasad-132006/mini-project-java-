@@ -260,17 +260,41 @@ class User_type
         TextField text_roll_no = new TextField();
         text_roll_no.setBounds(100,40,80,20);
 
-        Label cgpa = new Label("Enter CGPA");
-        cgpa.setBounds(20,70,80,20);
+        Label DS = new Label("DS");
+        DS.setBounds(20,70,80,20);
 
-        TextField text_cgpa = new TextField();
-        text_cgpa.setBounds(100,70,50,20);
+        TextField DS_marks = new TextField();
+        DS_marks.setBounds(100,70,80,20);
+
+        Label DiS = new Label("DiS");
+        DiS.setBounds(20,100,80,20);
+
+        TextField DiS_marks = new TextField();
+        DiS_marks.setBounds(100,100,80,20);
+
+        Label DAM = new Label("DAM");
+        DAM.setBounds(20,130,80,20);
+
+        TextField DAM_marks = new TextField();
+        DAM_marks.setBounds(100,130,80,20);
+
+        Label DMS = new Label("DMS");
+        DMS.setBounds(20,160,80,20);
+
+        TextField DMS_marks = new TextField();
+        DMS_marks.setBounds(100,160,80,20);
+
+        Label DCN = new Label("DCN");
+        DCN.setBounds(20,190,80,20);
+
+        TextField DCN_marks = new TextField();
+        DCN_marks.setBounds(100,190,80,20);
 
         Button enter = new Button("Enter result");
-        enter.setBounds(20,100,80,20);
+        enter.setBounds(20,220,80,20);
 
         Label successful = new Label();
-        successful.setBounds(20,130,200,20);
+        successful.setBounds(20,250,200,20);
 
         // actions
         enter.addActionListener(new ActionListener() {
@@ -282,8 +306,16 @@ class User_type
         // add components
         frame.add(roll_no);
         frame.add(text_roll_no);
-        frame.add(cgpa);
-        frame.add(text_cgpa);
+        frame.add(DS);
+        frame.add(DS_marks);
+        frame.add(DiS);
+        frame.add(DiS_marks);
+        frame.add(DAM);
+        frame.add(DAM_marks);
+        frame.add(DMS);
+        frame.add(DMS_marks);
+        frame.add(DCN);
+        frame.add(DCN_marks);
         frame.add(enter);
         frame.add(successful);
 
