@@ -43,7 +43,7 @@ class User_type
 
         // close frame
         frame.addWindowListener(new WindowAdapter(){
-            @override
+            @Override
             public void windowClosing(WindowEvent e){
                 frame.dispose();
             }    
@@ -91,7 +91,7 @@ class User_type
 
         // close frame
         frame.addWindowListener(new WindowAdapter(){
-            @override
+            @Override
             public void windowClosing(WindowEvent e){
                 frame.dispose();
             }    
@@ -150,7 +150,7 @@ class User_type
 
         // close frame
         frame.addWindowListener(new WindowAdapter(){
-            @override
+            @Override
             public void windowClosing(WindowEvent e){
                 frame.dispose();
             }    
@@ -180,7 +180,7 @@ class User_type
         signUp.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e) {
                 frame.dispose();
-                studentFrame();
+                teacherFrame();
             }
         });
 
@@ -198,7 +198,7 @@ class User_type
 
         // close frame
         frame.addWindowListener(new WindowAdapter(){
-            @override
+            @Override
             public void windowClosing(WindowEvent e){
                 frame.dispose();
             }    
@@ -216,24 +216,60 @@ class User_type
         TextField text_roll_no = new TextField();
         text_roll_no.setBounds(100,40,80,20);
 
-        Button view = new Button("View result");
-        view.setBounds(20,70,60,20);
+        Button view_result = new Button("View result");
+        view_result.setBounds(20,70,60,20);
 
-        Label result = new Label();
-        result.setBounds(20,100,200,20);
+        Label DS_result = new Label();
+        DS_result.setBounds(20,100,100,20);
+
+        Label DiS_result = new Label();
+        DiS_result.setBounds(20,130,100,20);
+
+        Label DAM_result = new Label();
+        DAM_result.setBounds(20,160,100,20);
+
+        Label DMS_result = new Label();
+        DMS_result.setBounds(20,190,100,20);
+
+        Label DCN_result = new Label();
+        DCN_result.setBounds(20,220,100,20);
+
+        Label CGPA = new Label();
+        CGPA.setBounds(20,250,100,20);
+
+        Button logout = new Button("Logout");
+        logout.setBounds(20,280,60,20);
 
         // actions
-        view.addActionListener(new ActionListener() {
+        view_result.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                result.setText("You have been passed");
+                DS_result.setText("Score in DS: 100");
+                DiS_result.setText("Score in DiS: 100");
+                DAM_result.setText("Score in DAM: 100");
+                DMS_result.setText("Score in DMS: 100");
+                DCN_result.setText("Score in DCN: 100");
+                CGPA.setText("Your CGPA is 10");
+            }
+        });
+
+        logout.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                frame.dispose();
+                User_type SRM = new User_type();
             }
         });
 
         // add components
         frame.add(roll_no);
         frame.add(text_roll_no);
-        frame.add(view);
-        frame.add(result);
+        frame.add(view_result);
+        frame.add(DS_result);
+        frame.add(DiS_result);
+        frame.add(DAM_result);
+        frame.add(DMS_result);
+        frame.add(DCN_result);
+        frame.add(CGPA);
+        frame.add(logout);
 
         // about frame
         frame.setSize(400,400);
@@ -242,7 +278,7 @@ class User_type
 
         // close frame
         frame.addWindowListener(new WindowAdapter(){
-            @override
+            @Override
             public void windowClosing(WindowEvent e){
                 frame.dispose();
             }    
@@ -293,13 +329,33 @@ class User_type
         Button enter = new Button("Enter result");
         enter.setBounds(20,220,80,20);
 
+        Button newStudent = new Button("Add new Student");
+        newStudent.setBounds(110,220,100,20);
+
         Label successful = new Label();
         successful.setBounds(20,250,200,20);
+
+        Button logout = new Button("Logout");
+        logout.setBounds(20,280,60,20);
 
         // actions
         enter.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 successful.setText("Result added sucessfully");
+            }
+        });
+
+        newStudent.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e){
+                frame.dispose();
+                newStudent();
+            }
+        });
+
+        logout.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                frame.dispose();
+                User_type SRM = new User_type();
             }
         });
 
@@ -317,7 +373,9 @@ class User_type
         frame.add(DCN);
         frame.add(DCN_marks);
         frame.add(enter);
+        frame.add(newStudent);
         frame.add(successful);
+        frame.add(logout);
 
         // about frame
         frame.setSize(400,400);
@@ -326,7 +384,7 @@ class User_type
 
         // close frame
         frame.addWindowListener(new WindowAdapter(){
-            @override
+            @Override
             public void windowClosing(WindowEvent e){
                 frame.dispose();
             }    
