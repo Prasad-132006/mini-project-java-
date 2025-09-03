@@ -220,22 +220,22 @@ class User_type
         view_result.setBounds(20,70,60,20);
 
         Label DS_result = new Label();
-        DS_result.setBounds(20,100,100,20);
+        DS_result.setBounds(20,100,150,20);
 
         Label DiS_result = new Label();
-        DiS_result.setBounds(20,130,100,20);
+        DiS_result.setBounds(20,130,150,20);
 
         Label DAM_result = new Label();
-        DAM_result.setBounds(20,160,100,20);
+        DAM_result.setBounds(20,160,150,20);
 
         Label DMS_result = new Label();
-        DMS_result.setBounds(20,190,100,20);
+        DMS_result.setBounds(20,190,150,20);
 
         Label DCN_result = new Label();
-        DCN_result.setBounds(20,220,100,20);
+        DCN_result.setBounds(20,220,150,20);
 
         Label CGPA = new Label();
-        CGPA.setBounds(20,250,100,20);
+        CGPA.setBounds(20,250,150,20);
 
         Button logout = new Button("Logout");
         logout.setBounds(20,280,60,20);
