@@ -115,19 +115,10 @@ class User_type
         text_password.setBounds(150,70,70,20);
 
         Button login = new Button("Login");
-        login.setBounds(80,100,50,20);
-
-        Button signUp = new Button("Sign up");
-        signUp.setBounds(20,100,50,20);
+        login.setBounds(20,100,50,20);
 
         // actions
-        signUp.addActionListener(new ActionListener(){
-            public void actionPerformed(ActionEvent e) {
-                frame.dispose();
-                newStudent();
-            }
-        });
-
+        
         login.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e) {
                 frame.dispose();
@@ -141,7 +132,6 @@ class User_type
         frame.add(password);
         frame.add(text_password);
         frame.add(login);
-        frame.add(signUp);
 
         // about frame
         frame.setSize(400,400);
@@ -158,7 +148,7 @@ class User_type
     }
 
     public void newStudent(){
-        Frame frame = new Frame("Please sign up");
+        Frame frame = new Frame("Adding new student");
 
         // set components
         Label username = new Label("Enter username :");
@@ -173,14 +163,14 @@ class User_type
         TextField text_password = new TextField();
         text_password.setBounds(150,70,70,20);
 
-        Button signUp = new Button("Sign up");
-        signUp.setBounds(20,100,50,20);
+        Button addStud = new Button("Add new student");
+        addStud.setBounds(20,100,100,20);
 
         // actions
-        signUp.addActionListener(new ActionListener(){
+        addStud.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e) {
                 frame.dispose();
-                teacherFrame();
+                enterResult();
             }
         });
 
@@ -189,7 +179,7 @@ class User_type
         frame.add(text_username);
         frame.add(password);
         frame.add(text_password);
-        frame.add(signUp);
+        frame.add(addStud);
 
         // about frame
         frame.setSize(400,400);
@@ -217,25 +207,25 @@ class User_type
         text_roll_no.setBounds(100,40,80,20);
 
         Button view_result = new Button("View result");
-        view_result.setBounds(20,70,60,20);
+        view_result.setBounds(20,70,80,20);
 
         Label DS_result = new Label();
-        DS_result.setBounds(20,100,150,20);
+        DS_result.setBounds(20,100,100,20);
 
         Label DiS_result = new Label();
-        DiS_result.setBounds(20,130,150,20);
+        DiS_result.setBounds(20,130,100,20);
 
         Label DAM_result = new Label();
-        DAM_result.setBounds(20,160,150,20);
+        DAM_result.setBounds(20,160,100,20);
 
         Label DMS_result = new Label();
-        DMS_result.setBounds(20,190,150,20);
+        DMS_result.setBounds(20,190,100,20);
 
         Label DCN_result = new Label();
-        DCN_result.setBounds(20,220,150,20);
+        DCN_result.setBounds(20,220,100,20);
 
         Label CGPA = new Label();
-        CGPA.setBounds(20,250,150,20);
+        CGPA.setBounds(20,250,100,20);
 
         Button logout = new Button("Logout");
         logout.setBounds(20,280,60,20);
